@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Simple Offline App</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="logout_menu">Logout</string>
+    <string name="theme_menu">Change Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="welcome_message">Welcome!</string>
+    <string name="no_internet">No Internet. Showing cached data.</string>
+    <string name="internet_available">Internet Available. Updating data...</string>
+</resources>

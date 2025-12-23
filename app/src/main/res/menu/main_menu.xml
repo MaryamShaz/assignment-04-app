@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item android:title="@string/theme_menu"
+          app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/menu_light"
+                android:title="@string/light_theme" />
+            <item
+                android:id="@+id/menu_dark"
+                android:title="@string/dark_theme" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/logout_menu"
+        app:showAsAction="never" />
+</menu>
