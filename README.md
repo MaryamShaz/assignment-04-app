@@ -96,23 +96,6 @@ app/
 
 ---
 
-## Assignment Alignment
-This project fulfills all requirements of **Assignment #4**, including:
-- Public API integration
-- Offline data storage using SQLite
-- RecyclerView and custom adapter
-- Menu implementation
-- Theme switching
-- WebView integration
-- Persistent user state handling
 
----
-
-## Author Information
-- Name: *Your Name*  
-- Registration No: *Your Registration Number*  
-- Program: BSCS  
-- Course: Android Application Development  
-- Instructor: Muhammad Azhar  
 
 ---
