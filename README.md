@@ -1,135 +1,118 @@
-Simple Offline Android App
-Overview
+# Simple Offline Android App
 
-This project is a Simple Offline Android Application developed as part of Assignment #4 (CLO-4) for the Android Application Development course.
-The application demonstrates core Android development concepts using Java and XML, including API integration, offline data persistence, RecyclerView, user state management, menu navigation, theme switching, and WebView integration.
+## Project Description
+This project is a **Simple Offline Android Application** developed as part of **Assignment #4 (CLO-4)** for the **Android Application Development** course.  
+The application is built using **Java and XML** in Android Studio and demonstrates core Android concepts such as API integration, offline data storage, RecyclerView, menu-based navigation, theme switching, and WebView integration.
 
-The app fetches data from a public REST API, stores it locally using SQLite, and allows the user to access the data even when the device is offline.
+---
 
-Features Implemented
-1. User Authentication (Simulated Login)
+## Functional Features
 
-Simple login screen using EditText and Button
+### 1. Login and User State Management
+- Simple login screen implemented using EditText and Button
+- Login state stored using SharedPreferences
+- Persistent login session across app restarts
+- Logout functionality provided in the main screen
 
-Authentication state stored using SharedPreferences
+### 2. REST API Integration
+- Public REST API used:
 
-Persistent login state across app restarts
-
-Logout functionality provided from the main screen
-
-2. REST API Integration
-
-Public API used:
 
 https://jsonplaceholder.typicode.com/posts
 
+- Data fetched using HttpURLConnection
+- JSON parsed using org.json
+- Handles network failure gracefully
 
-Data fetched using HttpURLConnection
+### 3. Offline Data Persistence (SQLite)
+- SQLite database implemented using SQLiteOpenHelper
+- API data stored locally for offline access
+- Automatic fallback to SQLite when internet is unavailable
+- User notified whether data is loaded online or offline
 
-JSON parsing handled using org.json
+### 4. RecyclerView and Adapter
+- Data displayed using RecyclerView
+- Custom RecyclerView.Adapter implemented
+- Efficient list rendering using ViewHolder pattern
+- Item click navigation supported
 
-Network failure handling implemented
+### 5. WebView Integration
+- In-app WebView used to display related web content
+- JavaScript enabled
+- External browser redirection avoided
 
-3. Offline Data Storage (SQLite)
+### 6. Theme Management
+- Light and Dark themes implemented
+- Theme switching available via Options Menu
+- Selected theme saved using SharedPreferences
+- Theme applied correctly on app restart
 
-SQLite database implemented using SQLiteOpenHelper
+### 7. Menu-Based Navigation
+- Options Menu implemented in MainActivity
+- Menu actions include:
+- Theme switching
+- Logout
+- Navigation handled using Intents
 
-API data stored locally for offline access
+---
 
-Automatic fallback to SQLite when internet is unavailable
+## Technologies Used
+- Programming Language: Java  
+- UI Design: XML  
+- IDE: Android Studio  
+- Database: SQLite  
+- Networking: HttpURLConnection  
+- UI Components: RecyclerView, WebView  
+- State Management: SharedPreferences  
 
-User notified whether data is loaded online or offline
+---
 
-4. RecyclerView and Adapter
+## Project Structure
 
-Data displayed using RecyclerView
-
-Custom RecyclerView.Adapter implemented
-
-Efficient data binding using ViewHolder pattern
-
-Item click navigation supported
-
-5. WebView Integration
-
-In-app WebView used to display related web content
-
-JavaScript enabled
-
-Content loaded without switching to an external browser
-
-6. Theme Management
-
-Light and Dark themes implemented
-
-Theme switching available through Options Menu
-
-Selected theme persisted using SharedPreferences
-
-Theme applied correctly during activity recreation
-
-7. Menu-Based Navigation
-
-Options Menu implemented in MainActivity
-
-Menu actions include:
-
-Theme switching
-
-Logout
-
-Navigation handled using explicit Intents
-
-8. Activity Lifecycle Handling
-
-Proper handling of activity recreation
-
-Persistent user and theme state
-
-No unnecessary API re-fetching when offline
-
-Technologies Used
-
-Language: Java
-
-UI Design: XML
-
-IDE: Android Studio
-
-Database: SQLite
-
-Networking: HttpURLConnection
-
-UI Components: RecyclerView, WebView
-
-State Management: SharedPreferences
-
-Project Structure (Simplified)
 app/
 ├── java/
-│   └── com.example.simpleofflineapp/
-│       ├── MainActivity.java
-│       ├── LoginActivity.java
-│       ├── WebViewActivity.java
-│       ├── ApiHelper.java
-│       ├── DatabaseHelper.java
-│       └── RecyclerAdapter.java
+│ └── com.example.simpleofflineapp/
+│ ├── MainActivity.java
+│ ├── LoginActivity.java
+│ ├── WebViewActivity.java
+│ ├── ApiHelper.java
+│ ├── DatabaseHelper.java
+│ └── RecyclerAdapter.java
 ├── res/
-│   ├── layout/
-│   ├── menu/
-│   ├── values/
-│   └── values-night/
+│ ├── layout/
+│ ├── menu/
+│ ├── values/
+│ └── values-night/
 └── AndroidManifest.xml
 
-How to Run the Project
 
-Clone the repository:
+---
 
-git clone <your-repository-url>
+## How to Run the Project
+1. Clone the repository
+2. Open the project in Android Studio
+3. Allow Gradle to sync completely
+4. Run the application on an emulator or physical device (API 24 or higher)
 
+---
 
-Open the project in Android Studio
+## Assignment Alignment
+This project fulfills all requirements of **Assignment #4**, including:
+- Public API integration
+- Offline data storage using SQLite
+- RecyclerView and custom adapter
+- Menu implementation
+- Theme switching
+- WebView integration
+- Persistent user state handling
 
-Allow Gradle to sync completely
+---
 
-Run the app on an emulator or physical device (API 24+)
+## Author Information
+- Name: *Your Name*  
+- Registration No: *Your Registration Number*  
+- Program: BSCS  
+- Course: Android Application Development  
+- Instructor: Muhammad Azhar  
+
+---
